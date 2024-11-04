@@ -1,0 +1,14 @@
+.ticker-body {
+  position: relative;
+  height: 5vh;
+}
+.ticker-header {
+  position: fixed;
+  top: -9px;
+  left: -140px;
+}
+
+.ticker-footer {
+  position: fixed;
+  bottom: 0px;
+}

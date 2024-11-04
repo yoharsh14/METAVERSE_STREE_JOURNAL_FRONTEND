@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/src/assets/favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/src/style.css" />
+    <title>METAVERSE STREET JOURNAL</title>
+  </head>
+  <body>
+    <div class="ticker-body">
+      <div
+        id="coinmarketcap-widget-marquee"
+        coins="6210,32341,1966,31526,7080,10688,6783"
+        currency="USD"
+        theme="light"
+        transparent="false"
+        show-symbol-logo="true"
+        class="ticker-header"
+      ></div>
+    </div>
+    <div id="root"></div>
+    <div class="ticker-body">
+      <gecko-coin-price-marquee-widget
+        locale="en"
+        outlined="true"
+        coin-ids="upland,the-sandbox,axie-infinity,decentraland,yield-guild-games,gala,mocaverse"
+        initial-currency="usd"
+        class="ticker-footer"
+      ></gecko-coin-price-marquee-widget>
+    </div>
+    <script src="https://widgets.coingecko.com/gecko-coin-price-marquee-widget.js"></script>
+    <script
+      type="text/javascript"
+      src="https://files.coinmarketcap.com/static/widget/coinMarquee.js"
+    ></script>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
